@@ -1,10 +1,10 @@
 # Sistema de administración de citas
 
-* Descripción del proyecto
-* Instalación y configuración
-* Uso del programa
-* Créditos
-* Licencia
+* [Descripción del proyecto](https://github.com/DmonID/admin-citas/blob/master/README.md#descripci%C3%B3n-del-proyecto)
+* [Instalación y configuración](https://github.com/DmonID/admin-citas#instalaci%C3%B3n-y-configuraci%C3%B3n)
+* [Uso del programa](https://github.com/DmonID/admin-citas#uso-del-programa)
+* [Créditos](https://github.com/DmonID/admin-citas#cr%C3%A9ditos)
+* [Licencia](https://github.com/DmonID/admin-citas#licencia)
 
 ## Descripción del proyecto
 
