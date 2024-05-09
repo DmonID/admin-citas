@@ -22,13 +22,29 @@ El programa cuenta con las siguientes funcionalidades:
 Para instalar y configurar el proyecto, se deben seguir los siguientes pasos:
 
 1. Clonar el repositorio de GitHub usando el comando:
+   ```bash
+   git clone https://github.com/DmonID/admin-citas.git
+   ```
 
-```bash
-git clone https://github.com/DmonID/admin-citas.git
-```
-
-2. Abrir el proyecto con IntelliJ IDEA y esperar a que se resuelvan las dependencias.
-3. Ejecutar el programa desde la clase Principal.java.
+2. Navegar al directorio del proyecto:
+   ```bash
+   cd admin-citas
+   ```
+   
+3. Compilar los archivos fuente Java:
+   ```bash
+   javac Doctor.java Paciente.java Cita.java Administrador.java SistemaCitas.java
+   ```
+   
+4. Crear el archivo JAR ejecutable:
+   ```bash
+   jar cfe SistemaCitas.jar SistemaCitas *.class
+   ```
+   
+5. Ejecutar el programa:
+   ```bash
+   java -jar SistemaCitas.jar
+   ```
 
 ## Uso del programa
 
