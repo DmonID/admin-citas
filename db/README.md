@@ -28,16 +28,24 @@ git clone https://github.com/DmonID/admin-citas.git
 ```
 
 2. Navegar al directorio del proyecto:
+   ```bash
    cd admin-citas
+   ```
    
 3. Compilar los archivos fuente Java:
+   ```bash
    javac *.java
+   ```
    
 4. Crear el archivo JAR ejecutable:
+   ```bash
    jar cfe SistemaCitas.jar SistemaCitas *.class
+   ```
    
 5. Ejecutar el programa:
+6. ```bash
    java -jar SistemaCitas.jar
+   ```
 
 ## Uso del programa
 
