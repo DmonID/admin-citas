@@ -27,8 +27,17 @@ Para instalar y configurar el proyecto, se deben seguir los siguientes pasos:
 git clone https://github.com/DmonID/admin-citas.git
 ```
 
-2. Abrir el proyecto con IntelliJ IDEA y esperar a que se resuelvan las dependencias.
-3. Ejecutar el programa desde la clase Principal.java.
+2. Navegar al directorio del proyecto:
+   cd admin-citas
+   
+3. Compilar los archivos fuente Java:
+   javac *.java
+   
+4. Crear el archivo JAR ejecutable:
+   jar cfe SistemaCitas.jar SistemaCitas *.class
+   
+5. Ejecutar el programa:
+   java -jar SistemaCitas.jar
 
 ## Uso del programa
 
