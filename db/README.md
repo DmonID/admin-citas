@@ -22,10 +22,9 @@ El programa cuenta con las siguientes funcionalidades:
 Para instalar y configurar el proyecto, se deben seguir los siguientes pasos:
 
 1. Clonar el repositorio de GitHub usando el comando:
-
-```bash
-git clone https://github.com/DmonID/admin-citas.git
-```
+   ```bash
+   git clone https://github.com/DmonID/admin-citas.git
+   ```
 
 2. Navegar al directorio del proyecto:
    ```bash
@@ -43,7 +42,7 @@ git clone https://github.com/DmonID/admin-citas.git
    ```
    
 5. Ejecutar el programa:
-6. ```bash
+   ```bash
    java -jar SistemaCitas.jar
    ```
 
