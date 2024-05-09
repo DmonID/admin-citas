@@ -33,7 +33,7 @@ Para instalar y configurar el proyecto, se deben seguir los siguientes pasos:
    
 3. Compilar los archivos fuente Java:
    ```bash
-   javac *.java
+   javac Doctor.java Paciente.java Cita.java Administrador.java SistemaCitas.java
    ```
    
 4. Crear el archivo JAR ejecutable:
