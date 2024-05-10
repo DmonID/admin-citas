@@ -86,34 +86,55 @@ public class SistemaCitas {
 
     public void iniciarSistema() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Bienvenido al sistema de administración de citas");
+        boolean salir = false;
+        
+        while (!salir) {
+            System.out.println("Bienvenido al sistema de administración de citas");
+            // Control de acceso
+            if (!controlAcceso()) {
+                System.out.println("Usted no tiene acceso al sistema como administrador");
+                return;
+            }
+            System.out.println("Menú Principal");
+            System.out.println("1. Alta Doctores");
+            System.out.println("2. Alta Pacientes");
+            System.out.println("3. Crear Cita");
+            System.out.println("4. Ver Citas Registradas");
+            System.out.println("5. Salir");
 
-        // Control de acceso
-        if (!controlAcceso()) {
-            System.out.println("Usted no tiene acceso al sistema como administrador");
-            return;
+            int opcion = scanner.nextInt();
+            scanner.nextLine(); // Consumir la nueva línea después de nextInt()
+
+            switch (opcion) {
+                case 1:
+                    registrarDoctor();
+                    break;
+                case 2:
+                    registrarPaciente();
+                    break;
+                case 3:
+                    crearCita();
+                    break;
+                case 4:
+                    mostrarCitasRegistradas();
+                    break;
+                case 5:
+                    salir = true;
+                    System.out.println("Saliendo del sistema...");
+                    break;
+                default:
+                    System.out.println("Opción no válida");
+            }
         }
+    }
 
-        System.out.println("Menú Principal");
-        System.out.println("1. Alta Doctores");
-        System.out.println("2. Alta Pacientes");
-        System.out.println("3. Crear Cita");
-
-        int opcion = scanner.nextInt();
-        scanner.nextLine(); // Consumir la nueva línea después de nextInt()
-
-        switch (opcion) {
-            case 1:
-                registrarDoctor();
-                break;
-            case 2:
-                registrarPaciente();
-                break;
-            case 3:
-                crearCita();
-                break;
-            default:
-                System.out.println("Opción no válida");
+    private void mostrarCitasRegistradas() {
+        if (citas.isEmpty()) {
+            System.out.println("No hay citas registradas.");
+        } else {
+            for (Cita cita : citas) {
+                System.out.prinln(cita);
+            }
         }
     }
 
