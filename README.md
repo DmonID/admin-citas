@@ -28,7 +28,7 @@ Para instalar y configurar el proyecto, se deben seguir los siguientes pasos:
 
 2. Navegar al directorio del proyecto:
    ```bash
-   cd admin-citas
+   cd admin-citas\src
    ```
    
 3. Compilar los archivos fuente Java:
@@ -36,12 +36,17 @@ Para instalar y configurar el proyecto, se deben seguir los siguientes pasos:
    javac Doctor.java Paciente.java Cita.java Administrador.java SistemaCitas.java
    ```
    
-4. Crear el archivo JAR ejecutable:
+5. Crear el archivo JAR ejecutable:
    ```bash
    jar cfe SistemaCitas.jar SistemaCitas *.class
    ```
+   o
+   ```bash
+   "C:\Program Files\Java\jdk-21\bin\jar" cfe SistemaCitas.jar SistemaCitas *.class
+   ```
+   Este puede cambiar según tu versión de Java.
    
-5. Ejecutar el programa:
+6. Ejecutar el programa:
    ```bash
    java -jar SistemaCitas.jar
    ```
